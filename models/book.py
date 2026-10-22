@@ -18,9 +18,9 @@ class LibraryBook(models.Model):
     @api.depends("stock")
     def _compute_available(self):
         for book in self:
-            book.available = book.store > 0
+            book.available = book.stock > 0
 
-    api.constrains("stock")
+    @api.constrains("stock")
     def _check_stock(self):
         for book in self:
             if book.stock < 0:

@@ -10,6 +10,7 @@
         "security/ir.model.access.csv",
         "views/book_views.xml",
         "views/member_views.xml",
+        "views/loan_views.xml",
         "views/menus.xml",
     ],
     "application": True,

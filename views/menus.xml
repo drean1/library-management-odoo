@@ -16,5 +16,9 @@
               name="Members"
               parent="library_model"
               action="library_member_action"/>
+    <menuitem id="menu_loan"
+              name="Loans"
+              parent="library_model"
+              action="library_loan_action"/>
     </data>
 </odoo>
